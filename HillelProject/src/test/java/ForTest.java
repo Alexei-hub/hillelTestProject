@@ -19,10 +19,14 @@ import static com.codeborne.selenide.WebDriverRunner.url;
 
 public class ForTest {
 
+    private String shopFromJenkins = System.getenv("param");
+
+
     @Test
     public void groupTestOne() {
         long id = Thread.currentThread().getId();
         System.out.println("Simple test-method One. Thread id is: " + id);
+        System.out.println(shopFromJenkins);
     }
 
     @Test
