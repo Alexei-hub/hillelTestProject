@@ -145,7 +145,7 @@
           <div class="suite-testSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ForTest</span>
+              <span class="class-name">ForTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -174,7 +174,7 @@
           <div class="suite-testSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">ForTest2</span>
+              <span class="class-name">ForTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -209,8 +209,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;testSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;testSuite&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;testSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;testSuite&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ForTest&quot;/&gt;
       &lt;class name=&quot;ForTest2&quot;/&gt;
@@ -256,33 +256,33 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'groupTestOne')
-data.setCell(0, 2, 'ForTest2')
-data.setCell(0, 3, 17);
+data.setCell(0, 2, 'ForTest')
+data.setCell(0, 3, 294);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'groupTestOne')
-data.setCell(1, 2, 'ForTest')
-data.setCell(1, 3, 16);
+data.setCell(1, 2, 'ForTest2')
+data.setCell(1, 3, 294);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'groupTestThree')
-data.setCell(2, 2, 'ForTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 2, 'ForTest2')
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'groupTestTwo')
+data.setCell(3, 1, 'groupTestThree')
 data.setCell(3, 2, 'ForTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'groupTestTwo')
-data.setCell(4, 2, 'ForTest2')
-data.setCell(4, 3, 0);
+data.setCell(4, 2, 'ForTest')
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'groupTestThree')
+data.setCell(5, 1, 'groupTestTwo')
 data.setCell(5, 2, 'ForTest2')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 2);
 window.suiteTableData['testSuite']= { tableData: data, tableDiv: 'times-div-testSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 ms</span>
+              <span class="suite-total-time">Total running time: 597 ms</span>
               <div id="times-div-testSuite">
               </div> <!-- times-div-testSuite -->
             </div> <!-- times-div -->
@@ -318,35 +318,29 @@ return data;
               <div class="chronological-class-name">ForTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">groupTestOne</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">groupTestThree</span>
+                <span class="method-start">437 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ForTest2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">groupTestThree</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-start">437 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">ForTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">groupTestThree</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">ForTest2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">groupTestTwo</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">442 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ForTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">groupTestTwo</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">442 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
