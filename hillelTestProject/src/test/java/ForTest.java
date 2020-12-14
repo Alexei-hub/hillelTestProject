@@ -1,15 +1,4 @@
-import com.codeborne.selenide.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.WebDriverRunner.source;
-import static com.codeborne.selenide.WebDriverRunner.url;
 //    @BeforeMethod
 //    public void before() {
 //        Configuration.startMaximized = true;
