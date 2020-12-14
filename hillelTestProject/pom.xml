@@ -34,7 +34,7 @@
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
-                            <value>target/allure-results</value>
+                            <value>allure-report</value>
                         </property>
                     </systemProperties>
                 </configuration>
