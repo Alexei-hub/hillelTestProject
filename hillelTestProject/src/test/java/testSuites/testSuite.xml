@@ -5,7 +5,6 @@
     <test name="testSuite">
         <classes>
             <class name="ForTest"/>
-            <class name="ForTest2"/>
         </classes>
     </test>
 
