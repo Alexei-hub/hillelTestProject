@@ -4,7 +4,7 @@ public class ForTest {
 
     @Test
     public void groupTestOne() {
-        new MainClass().testMethod();
+        new MainClass().testMethod(8);
     }
 }
 
